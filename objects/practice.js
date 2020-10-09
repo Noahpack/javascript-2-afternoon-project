@@ -15,20 +15,32 @@
 */
 
 //Code here
-
+const me = {
+  name: "Noah",
+  age: 18,
+}
 ////////// PROBLEM 2 //////////
 
 /*
   Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday.
   Have the values to those keys be strings that are equal to your favorite thing in that category.
 */
-
+const favoriteThings = {
+  band: "Pink Floyd",
+  food: "Rice bowls",
+  person: "Colin",
+  book: "Steelheart",
+  movie: "Place Beyond The Pines",
+  holiday: "Christmas",
+}
 //Code here
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car
   and then another key named 'brand' with the value being your favorite brand.
 */
+favoriteThings.car = 'Tesla';
+favoriteThings.brand = 'Uniqlo';
 
 //Code here
 
@@ -36,7 +48,8 @@
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
-
+favoriteThings.food = 'Chicken Nuggets'
+favoriteThings.book = 'Harry Potter'
 //Code here
 
 ////////// PROBLEM 3 //////////
@@ -48,13 +61,23 @@
   Set the value of that key to 'chapstick'.
   Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack.
 */
+const backPack = {
+  
+}
+const item = "firstPocket"
 
+backPack.firstPocket = "chapstick"
+backPack.color = "black"
 //Code here
 
 /*
   After you do the above, alert your entire backPack object.
 */
-
+function uhOh (backPack){
+ for(let i = 0; i <backPack.length ; i++) {
+  alert(backPack[i]);
+}
+}
 //Code here
 
 /*
@@ -62,7 +85,7 @@ You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console.
 */
-
+console.log(backPack)
 //Code here
 
 ////////// PROBLEM 4 //////////
@@ -83,7 +106,8 @@ var user2 = {
   name -> 'Bryan G. Smith' and email -> 'bryan.smith@devmounta.in'.
   Make that change without modifying the original object code above.
 */
-
+user2.name = 'Bryan G. Smith'
+user2.email = 'bryan.smith@devmounta.in'
 //Code Here
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
@@ -94,14 +118,20 @@ var user2 = {
 /*
   Create an empty object called methodCollection.
 */
+const methodCollection = {
 
+}
 //Code Here
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object.
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console.
 */
-
+function alertHello (hello){
+  for(i=0; i < hello; i++){
+    alert(hello[i])
+  }
+}
 //Code Here
 
 /*
